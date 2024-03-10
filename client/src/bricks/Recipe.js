@@ -21,7 +21,9 @@ function recipe(props) {
             {props.recipe.name}
           </Card.Title>
           <Card.Text>
+            <div style={{ maxHeight: '100px', overflow: 'hidden', textOverflow: 'ellipsis' }}> 
             {props.recipe.description}
+            </div>
           </Card.Text>
           <Button variant="primary">Order!</Button>
         </Card.Body>
